@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>
+        MAPEH
+    </title>
+    <link rel="stylesheet" type="text/css" href="mainstyle.css"/>
+    <link rel="icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image:url("background2.jpg");
+            background-repeat:none;
+            background-attachment: fixed;
+            background-size:cover;
+        }
+        video{
+            margin-left:700px;
+        }
+        div#title{
+            font-family: 'Russo One';
+            font-size:30px;
+            font-weight: bolder;
+            float:left;
+            color:rgb(0, 0, 0);
+            margin-left:620px;
+            margin-top:200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="home"src="logo.png">
+        <p id="nav">MAAAI</p>
+     
+    </div>
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+        <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button"><a href="index.html">Index</a>
+            </button>
+        </div> 
+        <div class="w3-dropdown-hover">
+            <button class="w3-button"><a href="sip.html">SIP</a></button>
+            
+        </div> 
+        <div class="w3-dropdown-hover">
+            <button class="w3-button"><a href="background.html">Background</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="w3-dropdown-content w3-bar-block">
+                <a href="#problem" class="w3-bar-item w3-button">Significance of the Study</a>
+                <a href="#background" class="w3-bar-item w3-button">Background</a>
+                <a href="#antonio" class="w3-bar-item w3-button">About Us</a>
+                </div>
+        </div> 
+        <div class="w3-dropdown-hover">
+            <button class="w3-button"><a href="mapeh.html">Media</a>
+            </button>
+        </div>
+        </div>
+    <button class="w3-button1 w3-white w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+    <script>   
+        function openRightMenu() {
+          document.getElementById("rightMenu").style.display = "block";
+        }
+        
+        function closeRightMenu() {
+          document.getElementById("rightMenu").style.display = "none";
+        }
+    </script>
+    <div id="title">
+        <p>MAPEH Video</p>
+    </div>
+    <video width="520" height="240" controls>
+        <source src="mapeh.mp4" type="video/mp4">
+        <source src="mapeh.mp4" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+</body>
+</html>
